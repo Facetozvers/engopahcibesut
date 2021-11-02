@@ -60,16 +60,16 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link px-3 active" aria-current="page" href="/">BERANDA</a>
+                            <a class="nav-link px-3" aria-current="page" href="/">BERANDA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">TENTANG KAMI</a>
+                            <a class="nav-link px-3" href="/#tentang_kami">TENTANG KAMI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">CARA KERJA</a>
+                            <a class="nav-link px-3" href="/#cara_kerja">CARA KERJA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">KONTAK</a>
+                            <a class="nav-link px-3" href="/#kontak">KONTAK</a>
                         </li>
                         <li class="nav-item btn-success nav-button">
                             <a class="nav-link px-3" style="color:white" href="/menabung">MULAI MENABUNG</a>

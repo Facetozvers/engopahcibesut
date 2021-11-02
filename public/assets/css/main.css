@@ -74,9 +74,6 @@ body{
   color:white;
 }
 
-.hero-img{
-  max-width: 700px;
-}
 
 .section-header{
   font-family: poppins;
@@ -467,9 +464,22 @@ table td{
 }
 
 /* media queries */
+@media only screen and (max-width: 320px) {
+    .navbar-brand h2{
+      font-size: 18px;
+    }
+
+    .hero-header{
+      font-size: 20px;
+    }
+}
 @media only screen and (max-width: 370px) {
     .navbar-brand h2{
       font-size: 24px;
+    }
+
+    .hero-header{
+      font-size: 22px;
     }
 }
 
@@ -478,8 +488,14 @@ table td{
       font-size: 24px;
     }
 
-    .hero-img{
-      max-width:300px;
+    .hero-header{
+      font-size: 22px;
     }
+}
+
+@media only screen and (max-width: 768px){
+  .hero-header{
+    font-size: 25px;
+  }
 }
 
