@@ -10,7 +10,7 @@ return [
         'theme_color' => '#000000',
         'display' => 'standalone',
         'orientation'=> 'portrait',
-        'status_bar'=> '#13ae4b',
+        'status_bar'=> 'green',
         'icons' => [
             '72x72' => [
                 'path' => '/images/icons/icon-72x72.png',
@@ -57,6 +57,7 @@ return [
             '1668x2388' => '/images/icons/splash-1668x2388.png',
             '2048x2732' => '/images/icons/splash-2048x2732.png',
         ],
-    
+        
+        'custom' => []
     ]
 ];
