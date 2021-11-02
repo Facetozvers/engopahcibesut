@@ -80,6 +80,14 @@
                     </span>
                 @enderror
               </div>
+              <div class="col-md-12 pt-3">
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                    <label class="form-check-label" for="remember">
+                        Ingat Saya
+                    </label>
+                </div>
+              </div>
             </div>
             <div class="row justify-content-center">
               <div class="col-md-12 pt-5 text-center">
