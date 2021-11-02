@@ -1,0 +1,485 @@
+@font-face {
+    font-family: poppins;
+    src: url('/assets/font/poppins/Poppins-Regular.ttf');
+    font-weight: 400;
+  }
+@font-face {
+    font-family: poppins;
+    src: url('/assets/font/poppins/Poppins-SemiBold.ttf');
+    font-weight: 600;
+  }
+@font-face {
+    font-family: poppins;
+    src: url('/assets/font/poppins/Poppins-Bold.ttf');
+    font-weight: 700;
+  }
+@font-face {
+    font-family: poppins;
+    src: url('/assets/font/poppins/Poppins-ExtraBold.ttf');
+    font-weight: 800;
+  }
+@font-face {
+    font-family: poppins;
+    src: url('/assets/font/poppins/Poppins-Black.ttf');
+    font-weight: 900;
+  }
+
+body{
+    font-family: poppins, Verdana;
+    font-weight: 400;
+}
+
+.navbar-brand h2{
+    font-family: poppins, Verdana;
+    font-weight: 900;
+    color:#13ae4b;
+}
+
+.nav-item a{
+    font-family: poppins, Verdana;
+    font-weight: 700;
+}
+
+#offcanvasNavbarLabel{
+    font-family: poppins, Verdana;
+    font-weight: 700;
+    color:#13ae4b;
+}
+
+.nav-button{
+    background: #13ae4b;
+}
+
+.nav-button:hover{
+    background: #4ac24a;
+}
+
+.page-header{
+  font-family: poppins;
+  font-weight: 900;
+  color:#13ae4b;
+  padding-top: 1em;
+}
+
+.page-subtitle{
+  font-family: poppins;
+  font-weight: 400;
+  padding-top: 0.5em;
+}
+
+.hero-header{
+  font-family: poppins;
+  font-weight: 900;
+  padding-top: 1em;
+  color:white;
+}
+
+.hero-img{
+  max-width: 700px;
+}
+
+.section-header{
+  font-family: poppins;
+  font-weight: 700;
+  padding-top: 1em;
+}
+
+.section-subtitle{
+  font-family: poppins;
+  font-weight: 400;
+  padding-top: 1em;
+  line-height: 1.7em;
+}
+
+.sidebar-header{
+  font-family: poppins;
+  font-weight: 900;
+  padding-top: 1em;
+}
+
+.sidebar-subtitle{
+  font-family: poppins;
+  font-weight: 600;
+  padding-top: 0.5em;
+}
+
+.sidebar ul li a{
+  color:rgba(0, 0, 0, 0.788);
+}
+
+.sidebar ul li .active{
+  color:#4ac24a;
+}
+
+.sidebar ul li a:hover{
+  color:#4ac24a;
+}
+
+.sidebar ul li a:focus{
+  color:#4ac24a;
+}
+
+.panel-header{
+  font-family: poppins;
+  font-weight: 700;
+  padding-left: 12px;
+}
+
+.list-container{
+  border-radius: 4px;
+  background: #71747110;
+}
+
+.list-head{
+  font-family: poppins;
+  font-weight: 400;
+  padding: 0.5em;
+  padding-bottom:0;
+  padding-top:0;
+}
+
+.list-head.tanggal{
+  font-family: poppins;
+  font-weight: 400;
+}
+
+.list-head.status.selesai{
+  font-family: poppins;
+  font-weight: 600;
+  color:#4ac24a;
+}
+
+.list-head.status.pending{
+  font-family: poppins;
+  font-weight: 600;
+  color:rgba(240, 229, 73, 0.897);
+}
+
+.list-head.status.batal{
+  font-family: poppins;
+  font-weight: 600;
+  color:rgba(241, 79, 50, 0.863);
+}
+
+.list-item{
+  font-family: poppins;
+  font-weight: 600;
+  padding-left:0.5em;
+  padding-bottom:0;
+  margin-bottom:0;
+}
+
+.btn-filter{
+  color:#4ac24a;
+  border: 1px solid #4ac24a;
+  background: white;
+  border-radius: 20px;
+}
+
+.btn-filter:hover, .btn-filter:focus{
+  color:white;
+  background: #4ac24a;
+  border: 1px solid #4ac24a;
+}
+
+.btn-filter.active{
+  color:white;
+  background: #4ac24a;
+  border: 1px solid #4ac24a;
+}
+
+/* table */
+table td{
+  vertical-align: top;
+}
+
+
+
+/* form */
+.form-label{
+  font-family: poppins;
+  font-weight: 700;
+}
+
+.form-subtitle{
+  font-family: poppins;
+  font-weight: 700;
+}
+
+.form-subtitle2{
+  font-family: poppins;
+  font-weight: 400;
+}
+
+.button-submit{
+  font-family: poppins;
+  font-weight: 700;
+  width:100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  background: #13ae4b;
+}
+
+.button-menu{
+  font-family: poppins;
+  font-weight: 700;
+  width:100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  background: #13ae4b;
+}
+
+.pagination li a{
+  color:#13ae4b;
+}
+
+.page-item.active .page-link {
+  color:white;
+  background: #13ae4b;
+  border-color: green;
+}
+
+.page-item .page-link:hover{
+  color:green
+}
+
+.img-header{
+  font-family: poppins;
+  font-weight: 600;
+}
+
+.img-title{
+  font-family: poppins;
+  font-weight: 600;
+  color: #13ae4b;
+}
+
+.card{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+/* checkbox */
+/* Customize the label (the container) */
+.box {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.box:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.box input:checked ~ .checkmark {
+  background-color: #13ae4b;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.box .checkmark:after {
+  left: 11px;
+  top: 7px;
+  width: 8px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/* form box */
+.form-box{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border-radius: 4px;
+  max-width: 500px;
+  margin:auto;
+}
+
+
+
+
+/* animated background */
+.area{
+    background: white;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(53, 194, 61, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+/* media queries */
+@media only screen and (max-width: 370px) {
+    .navbar-brand h2{
+      font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar-brand h2{
+      font-size: 24px;
+    }
+
+    .hero-img{
+      max-width:300px;
+    }
+}
+
