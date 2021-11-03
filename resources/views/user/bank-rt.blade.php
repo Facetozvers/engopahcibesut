@@ -13,7 +13,7 @@
         <div class="col-6 col-lg-9">
             <div class="float-end">
                 <select class="form-select float-end" name="" onchange="location = this.value">
-                    <option {{ Request::get('rw') == 1 ? 'selected' : '' }} value="/data-bank?data=rt&rw=1">RW 1</option>
+                    <option {{ Request::get('rw') == 1 || Request::get('rw') == NULL ? 'selected' : '' }} value="/data-bank?data=rt&rw=1">RW 1</option>
                     <option {{ Request::get('rw') == 2 ? 'selected' : '' }} value="/data-bank?data=rt&rw=2">RW 2</option>
                     <option {{ Request::get('rw') == 3 ? 'selected' : '' }} value="/data-bank?data=rt&rw=3">RW 3</option>
                     <option {{ Request::get('rw') == 4 ? 'selected' : '' }} value="/data-bank?data=rt&rw=4">RW 4</option>
@@ -30,7 +30,7 @@
                 </select>
             </div>
         </div>
-        <h5 class="panel-header">RW {{Request::get('rw')}}</h5>
+        <h5 class="panel-header">RW {{Request::get('rw')}} {{ Request::get('rw') == NULL ? '1' : '' }}</h5>
         <table class="table table-striped">
             <thead class="table-success">
                 <tr>

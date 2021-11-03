@@ -11,6 +11,14 @@
             </div>
         </div>
         @endif
+        <div class="col-12 mb-3">
+            <div class="list-container p-3">
+                <a class="btn btn-success btn-filter {{Request::get('status') == NULL ? 'active' : ''}}" href="/pesananku">Semua</a>
+                <a class="btn btn-success btn-filter {{Request::get('status') == 'selesai' ? 'active' : ''}}" href="/pesananku?status=selesai">Selesai</a>
+                <a class="btn btn-success btn-filter {{Request::get('status') == 'pending'? 'active' : ''}}" href="/pesananku?status=pending">Pending</a>
+                <a class="btn btn-success btn-filter {{Request::get('status') == 'batal' ? 'active' : ''}}" href="/pesananku?status=batal">Batal</a>
+            </div>
+        </div>
         @if($pesanan->count() == 0)
         <div class="col-md-12 mb-3">
             <div class="list-container p-3">

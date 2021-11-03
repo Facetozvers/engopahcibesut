@@ -65,7 +65,7 @@
             @csrf
             <div class="row justify-content-center">
               <div class="col-md-12 pt-5">
-                <input type="text" class="form-control py-3 @error('phone_number') is-invalid @enderror" style="margin:auto" placeholder="Nomor Handphone" name="phone_number" required>
+                <input type="number" class="form-control py-3 @error('phone_number') is-invalid @enderror" style="margin:auto" placeholder="Nomor Handphone" name="phone_number" required>
                 @error('phone_number')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>

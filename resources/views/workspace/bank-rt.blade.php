@@ -30,7 +30,7 @@
                 </select>
             </div>
         </div>
-        <h5 class="panel-header">RW {{Request::get('rw')}}</h5>
+        <h5 class="panel-header">RW {{Request::get('rw')}} {{ Request::get('rw') == NULL ? '1' : '' }}</h5>
         <table class="table table-striped">
             <thead class="table-success">
                 <tr>

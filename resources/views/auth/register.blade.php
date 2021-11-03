@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="/dependencies/bootstrap-5.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1.21">
 
     <!-- Web Application Manifest -->
     <link rel="manifest" href="/manifest.json">
@@ -74,7 +74,7 @@
                 @enderror
               </div>
               <div class="col-md-12 pt-3">
-                <input type="text" class="form-control py-3 @error('phone_number') is-invalid @enderror" style="margin:auto" placeholder="Nomor Handphone" name="phone_number" required>
+                <input type="number" class="form-control py-3 @error('phone_number') is-invalid @enderror" style="margin:auto" placeholder="Nomor Handphone" name="phone_number" required>
                 @error('phone_number')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
