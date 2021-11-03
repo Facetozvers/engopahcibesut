@@ -75,7 +75,8 @@
                     <div class="col-md-8">
                         <button type="button" class="btn btn-success float-end mt-3 mt-lg-0" data-bs-toggle="modal" data-bs-target="#detailModal" 
                         data-bs-name="{{$pesan->name}}" data-bs-alamat="{{$pesan->alamat}}" data-bs-reqid="{{$pesan->req_id}}" data-bs-tanggal="{{date('d F Y', strtotime($pesan->created_at))}}" data-bs-pengambilan="{{date('d F Y', strtotime($pesan->tanggal_pengambilan))}}" data-bs-status="{{$pesan->status}}" 
-                        data-bs-minyak-jelantah="{{$pesan->minyak_jelantah_liter}}" data-bs-botol-plastik="{{$pesan->botol_plastik_kg}}" data-bs-kardus="{{$pesan->kardus_kg}}" data-bs-mj="{{$pesan->minyak_jelantah}}" data-bs-bp="{{$pesan->botol_plastik}}" data-bs-kr="{{$pesan->kardus}}">
+                        data-bs-minyak-jelantah="{{$pesan->minyak_jelantah_liter}}" data-bs-botol-plastik="{{$pesan->botol_plastik_kg}}" data-bs-kardus="{{$pesan->kardus_kg}}" data-bs-mj="{{$pesan->minyak_jelantah}}" data-bs-bp="{{$pesan->botol_plastik}}" data-bs-kr="{{$pesan->kardus}}"
+                        data-bs-rt="{{$pesan->rt}}" data-bs-rw="{{$pesan->rw}}">
                         Lihat Detail
                         </button>
                     </div>
@@ -99,27 +100,37 @@
                     <tr class="pb-2">
                         <td style="width:170px">No. Pesanan</td>
                         <td style="padding-right :10px">:</td>
-                        <td id="reqidModal">#239280931209</td>
+                        <td id="reqidModal"></td>
                     </tr>
                     <tr>
                         <td>Nama</td>
                         <td style="padding-right :10px">:</td>
-                        <td id="namaModal">Rafi Chandra</td>
+                        <td id="namaModal"></td>
                     </tr>
                     <tr>
                         <td>Alamat</td>
                         <td style="padding-right :10px">:</td>
-                        <td id="alamatModal">Komp. TNI AU CURUG INDAH, Jl. Wirajasa No.9 RT01/RW08as dfas df asdfsadfas dfas asdfasd </td>
+                        <td id="alamatModal"></td>
+                    </tr>
+                    <tr>
+                        <td>RT</td>
+                        <td style="padding-right :10px">:</td>
+                        <td id="rtModal"></td>
+                    </tr>
+                    <tr>
+                        <td>RW</td>
+                        <td style="padding-right :10px">:</td>
+                        <td id="rwModal"></td>
                     </tr>
                     <tr>
                         <td>Tanggal Request</td>
                         <td style="padding-right :10px">:</td>
-                        <td id="reqModal">Rafi Chandra</td>
+                        <td id="reqModal"></td>
                     </tr>
                     <tr>
                         <td>Pengambilan</td>
                         <td style="padding-right :10px">:</td>
-                        <td id="pengambilanModal">Rafi Chandra</td>
+                        <td id="pengambilanModal"></td>
                     </tr>
                     <tr>
                         <td>Status</td>
@@ -177,6 +188,8 @@
         var mj = button.getAttribute('data-bs-mj')
         var bp = button.getAttribute('data-bs-bp')
         var kr = button.getAttribute('data-bs-kr')
+        var rt = button.getAttribute('data-bs-rt')
+        var rw = button.getAttribute('data-bs-rw')
         
         // Update the modal's content.
         var modalNama = document.getElementById('namaModal')
@@ -191,10 +204,14 @@
         var modal_mj = document.getElementById('mj')
         var modal_bp = document.getElementById('bp')
         var modal_kr = document.getElementById('kr')
+        var modal_rt = document.getElementById('rtModal')
+        var modal_rw = document.getElementById('rwModal')
 
         modalNama.textContent = name
         modalReqid.textContent = req_id
         modalAlamat.textContent = alamat
+        modal_rt.textContent = rt
+        modal_rw.textContent = rw
         modalReq.textContent = tanggal
         modalStatus.textContent = status
         modalPengambilan.textContent = pengambilan
