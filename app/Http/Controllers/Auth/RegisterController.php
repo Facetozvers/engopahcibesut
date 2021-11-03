@@ -53,6 +53,9 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:21'],
             'phone_number' => ['required', 'string', 'max:15', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ],
+        [
+            'phone_number.unique' => 'Nomor Handphone sudah digunakan!',
         ]);
     }
 

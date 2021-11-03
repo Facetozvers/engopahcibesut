@@ -49,6 +49,9 @@ class UserController extends Controller
                 'name' => ['required'],
                 'phone_number' => ['required', 'string', 'max:15', 'unique:users'],
                 'current_password' => ['required', new MatchOldPassword],
+            ],
+            [
+                'phone_number.unique' => 'Nomor Handphone sudah digunakan!',
             ]);
         }
 
