@@ -36,3 +36,7 @@ Route::post('/proses_ngopah', 'AdminController@proses_ngopah');
 Route::post('/batalkan_pesanan', 'AdminController@batalkan_pesanan');
 Route::get('/workspace/ubah-profil', 'AdminController@ubah_profil');
 Route::post('/workspace/ubah-profil', 'AdminController@store_profil');
+
+Route::get('/offline', function () {
+    return view('vendor.laravelpwa.offline');
+});

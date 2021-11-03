@@ -52,7 +52,7 @@ class UserController extends Controller
             ]);
         }
 
-        $user->name = $request->name;
+        $user->name = ucwords($request->name);
         $user->phone_number = $request->phone_number;
 
         $user->save();

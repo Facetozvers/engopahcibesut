@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="/dependencies/bootstrap-5.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/main.css?v=1.22">
 
     <title>Login | E-NGOPAHCIBESUT</title>
 
@@ -44,6 +45,13 @@
     @laravelPWA
   </head>
   <body class="area">
+    <div class="preloader">
+        <div class="loading">
+            <div class="spinner-border" role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+    </div>
     <!-- animated circle background -->
             <ul class="circles">
                     <li></li>
@@ -104,4 +112,15 @@
     <!-- Bootstrap Bundle with Popper -->
     <script src="/dependencies/bootstrap-5.1.3/js/bootstrap.bundle.min.js" ></script>
   </body>
+  <script>
+    $(function () {
+    // page is loaded, it is safe to hide loading animation
+    $('.preloader').hide();
+
+    $(window).on('beforeunload', function () {
+        // user has triggered a navigation, show the loading animation
+        $('.preloader').show();
+    });
+  });
+  </script>
 </html>

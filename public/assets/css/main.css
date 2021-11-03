@@ -29,6 +29,10 @@ body{
     font-weight: 400;
 }
 
+.navbar{
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
 .navbar-brand h2{
     font-family: poppins, Verdana;
     font-weight: 900;
@@ -473,6 +477,31 @@ input[type=number] {
         border-radius: 50%;
     }
 
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #fff;
+}
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font: 14px arial;
+}
+
+.offcanvas-end{
+  width:300px;
+}
+
+.offcanvas-start{
+  width:300px;
 }
 
 /* media queries */

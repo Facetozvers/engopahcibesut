@@ -5,10 +5,10 @@ return [
     'manifest' => [
         'name' => env('APP_NAME', 'My PWA App'),
         'short_name' => 'E-NGOPAHCIBESUT',
-        'start_url' => '/',
-        'background_color' => '#13ae4b',
+        'start_url' => '/index.php',
+        'background_color' => 'white',
         'theme_color' => '#000000',
-        'display' => 'standalone',
+        'display' => 'fullscreen',
         'orientation'=> 'portrait',
         'status_bar'=> 'green',
         'icons' => [

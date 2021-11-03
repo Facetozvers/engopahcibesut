@@ -9,43 +9,26 @@
 
     <!-- Bootstrap CSS -->
     <link href="/dependencies/bootstrap-5.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/main.css?v=1.21">
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/main.css?v=1.22">
     <title>@yield('title')</title>
     
-    <!-- Web Application Manifest -->
-    <link rel="manifest" href="/manifest.json">
-    <!-- Chrome for Android theme color -->
-    <meta name="theme-color" content="#000000">
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="PWA">
-    <link rel="icon" sizes="512x512" href="/images/icons/icon-512x512.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="PWA">
-    <link rel="apple-touch-icon" href="/images/icons/icon-512x512.png">
-
-    <link href="/images/icons/splash-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    <link href="/images/icons/splash-750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    <link href="/images/icons/splash-1242x2208.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-    <link href="/images/icons/splash-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-    <link href="/images/icons/splash-828x1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    <link href="/images/icons/splash-1242x2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-    <link href="/images/icons/splash-1536x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    <link href="/images/icons/splash-1668x2224.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    <link href="/images/icons/splash-1668x2388.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    <link href="/images/icons/splash-2048x2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-
     <!-- Tile for Win8 -->
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/images/icons/icon-512x512.png">
     @laravelPWA
+    
+    
   </head>
   <body>
-    <nav class="navbar navbar-light navbar-expand-xl bg-light px-3">
+    <div class="preloader">
+        <div class="loading">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        </div>
+    </div>
+    <nav class="navbar sticky-top navbar-light navbar-expand-xl bg-light px-3">
         <div class="container-fluid py-3">
             <a class="navbar-brand" href="/"><h2 class="m-0">E-NGOPAHCIBESUT</h2></a>
             <button style="border:none" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -59,16 +42,16 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link px-3 active" aria-current="page" href="/">BERANDA</a>
+                            <a class="nav-link px-3" aria-current="page" href="/">BERANDA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">TENTANG KAMI</a>
+                            <a class="nav-link px-3" href="/#tentang_kami">TENTANG KAMI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">CARA KERJA</a>
+                            <a class="nav-link px-3" href="/#cara_kerja">CARA KERJA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">KONTAK</a>
+                            <a class="nav-link px-3" href="/#kontak">KONTAK</a>
                         </li>
                         <li class="nav-item btn-success nav-button">
                             <a class="nav-link px-3" style="color:white" href="/menabung">MULAI MENABUNG</a>
@@ -222,5 +205,16 @@
     </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="/dependencies/bootstrap-5.1.3/js/bootstrap.bundle.min.js" ></script>
+    <script>
+        $(function () {
+        // page is loaded, it is safe to hide loading animation
+        $('.preloader').hide();
+
+        $(window).on('beforeunload', function () {
+            // user has triggered a navigation, show the loading animation
+            $('.preloader').show();
+        });
+    });
+    </script>
   </body>
 </html>

@@ -21,7 +21,7 @@
                     </span>
                     @enderror
                     <label for="phone_number" class="form-label mt-3">Nomor Handphone</label>
-                    <input id="phone_number" type="text" class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" value="{{$profil->phone_number}}" placeholder="Masukkan Nomor Handphone" required>
+                    <input id="phone_number" type="number" class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" value="{{$profil->phone_number}}" placeholder="Masukkan Nomor Handphone" required>
                     @error('phone_number')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
