@@ -26,7 +26,7 @@ class UserController extends Controller
             'new_confirm_password' => ['string', 'min:8','same:new_password'],
         ],
         [
-            'new_confirm_password.same' => 'Konfirmasi Password Gagal!',
+            'new_confirm_password.same' => 'Konfirmasi Password Tidak Cocok!',
         ]);
    
         User::find(auth()->user()->id)->update(['password'=> Hash::make($request->new_password)]);

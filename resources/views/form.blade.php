@@ -2,7 +2,7 @@
 @section('title', 'Form Menabung | E-NGOPAHCIBESUT')
 
 @section('content')
-<div class="container">
+<div class="container px-3">
     <h1 class="page-header">Form Menabung Bank Sampah</h1>
     <p class="page-subtitle">Untuk mulai menabung, mohon untuk melengkapi form dibawah ini</p>
 
@@ -58,7 +58,7 @@
             </div>
             
         </div>
-        <div class="row justify-content-center pt-5 px-2">
+        <div class="row justify-content-center pt-5 px-2 mb-3">
             <button class="btn btn-success button-submit">SUBMIT</button>
         </div>
         
