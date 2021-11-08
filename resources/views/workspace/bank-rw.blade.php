@@ -6,9 +6,22 @@
         <div class="col-5 col-lg-3 mb-3">
             <select class="form-select" name="" onchange="location = this.value">
                 <option {{ Request::get('data') == NULL ? 'selected' : '' }} value="/workspace/data-bank">Data Individu</option>
-                <option {{ Request::get('data') == 'rt' ? 'selected' : '' }} value="/workspace/data-bank?data=rt">Data per RT</option>
+                <option {{ Request::get('data') == 'rt' ? 'selected' : '' }} value="/workspace/data-bank?data=rt&rw=1">Data per RT</option>
                 <option {{ Request::get('data') == 'rw' ? 'selected' : '' }} value="/workspace/data-bank?data=rw">Data per RW</option>
             </select>
+        </div>
+        <div class="col-12 col-lg-9 mb-3">
+            <div class="float-xl-end">
+            <form action="">
+                <input type="hidden" value="{{Request::get('data')}}" name="data">
+                <input type="hidden" value="{{Request::get('rw')}}" name="rw">
+                <select class="form-select" onchange="this.form.submit()" name="periode" id="periode">
+                    <option {{ Request::get('periode') == 'semua' ? 'selected' : '' }} value="semua">Sepanjang Waktu</option>
+                    <option {{ Request::get('periode') == '30_hari' ? 'selected' : '' }} value="30_hari">30 Hari Terakhir</option>
+                    <option {{ Request::get('periode') == '7_hari' ? 'selected' : '' }} value="7_hari">7 Hari Terakhir</option>
+                </select>
+            </form>
+            </div>
         </div>
         <table class="table table-striped">
             <thead class="table-success">

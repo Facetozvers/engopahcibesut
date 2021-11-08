@@ -43,13 +43,13 @@ class UserController extends Controller
         $user = User::find(Auth::id());
         if($request->phone_number == $user->phone_number){
             $request->validate([
-                'name' => ['required'],
+                'name' => ['required','string', 'max:30'],
                 'current_password' => ['required', new MatchOldPassword],
             ]);
         }
         else{
             $request->validate([
-                'name' => ['required'],
+                'name' => ['required','string', 'max:30'],
                 'phone_number' => ['required', 'string', 'max:15', 'unique:users'],
                 'current_password' => ['required', new MatchOldPassword],
             ],

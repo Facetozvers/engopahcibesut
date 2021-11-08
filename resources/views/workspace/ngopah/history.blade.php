@@ -21,6 +21,23 @@
             <div class="list-container p-3">
                 <div class="row">
                     <div class="col-12">
+                        <h5 class="list-item pb-2">Rentang Tanggal</h5>
+                        
+                        <form action="">
+                            <label for="start_date">Dari :</label>
+                            <input type="date" class="form-control" name="start_date">
+                            <label for="start_date" class="mt-2">Sampai Dengan :</label>
+                            <input type="date" class="form-control" name="end_date">
+                            <button class="btn btn-success button-submit mt-3">Cari Tanggal</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mb-3">
+            <div class="list-container p-3">
+                <div class="row">
+                    <div class="col-12">
                         <h5 class="list-item pb-2">Cari Data :</h5>
                         <form action="">
                             <div class="input-group mb-3">

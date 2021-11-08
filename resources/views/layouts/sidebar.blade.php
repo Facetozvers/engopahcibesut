@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link href="/dependencies/bootstrap-5.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <link rel="stylesheet" href="/assets/css/main.css?v=1.23">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1.24">
     <title>@yield('title')</title>
     
     <!-- Tile for Win8 -->
@@ -53,8 +53,8 @@
                         <li class="nav-item">
                             <a class="nav-link px-3" href="/#kontak">KONTAK</a>
                         </li>
-                        <li class="nav-item btn-success nav-button">
-                            <a class="nav-link px-3" style="color:white" href="/menabung">MULAI MENABUNG</a>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="/menabung">MULAI MENABUNG</a>
                         </li>
                     </ul>
                     <hr>
@@ -74,6 +74,7 @@
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="/menabung">Mulai Menabung</a>
                                     <a class="dropdown-item" href="/pesananku">Dashboard</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
