@@ -61,6 +61,9 @@
                             <li class="nav-item">
                                 <a class="nav-link px-3" href="/register">DAFTAR</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3" id="btnInstall" href="#"><i class="fas fa-arrow-circle-down pe-2"></i>INSTALL</a>
+                            </li>
                         @else
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -84,6 +87,9 @@
                                     </form>
                                 </div>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3" id="btnInstall" href="#"><i class="fas fa-arrow-circle-down pe-2"></i>INSTALL</a>
+                            </li>
                         @endguest
                         </ul>
                     </div>
@@ -97,6 +103,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link px-3" href="/register">DAFTAR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3" id="btnInstall2" href="#"><i class="fas fa-arrow-circle-down pe-2"></i>INSTALL</a>
                             </li>
                         @else
                             <li class="nav-item">
@@ -118,7 +127,9 @@
                                     {{ __('Logout') }}
                                 </a>
                             </li>
-                            
+                            <li class="nav-item">
+                                <a class="nav-link px-3" id="btnInstall2" href="#"><i class="fas fa-arrow-circle-down pe-2"></i>INSTALL</a>
+                            </li>
                         @endguest
                         </ul>
                     </div>
@@ -222,6 +233,7 @@
     </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="/dependencies/bootstrap-5.1.3/js/bootstrap.bundle.min.js" ></script>
+    <script src="/assets/js/A2HS.js"></script>
     <script>
         $(function () {
         // page is loaded, it is safe to hide loading animation
