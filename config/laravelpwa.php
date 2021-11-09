@@ -6,11 +6,11 @@ return [
         'name' => env('APP_NAME', 'My PWA App'),
         'short_name' => 'E-NGOPAHCIBESUT',
         'start_url' => '/index.php',
-        'background_color' => 'white',
+        'background_color' => '#13ae4b',
         'theme_color' => '#000000',
         'display' => 'fullscreen',
         'orientation'=> 'portrait',
-        'status_bar'=> 'green',
+        'status_bar'=> '#13ae4b',
         'icons' => [
             '72x72' => [
                 'path' => '/images/icons/icon-72x72.png',
